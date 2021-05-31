@@ -52,6 +52,7 @@
                         <div class="form-group">
                             <label>Image</label>
                             <input type="file" id="image" name="image" class="form-control" value="upload">
+                            <button class="btn btn-secondary">Upload image</button>
                             
                         </div>
 
