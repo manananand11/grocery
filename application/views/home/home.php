@@ -187,7 +187,7 @@
                 foreach($menus as $menu)
                 {
             ?>
-         <div class="col-12 col-sm-3">
+         <div class="col-12 col-md-3 col-sm-3" style="min-width:300px;">
             <div class="container1">
                <img src="<?php echo base_url().'assets/image/'.$menu['image']?>" height=173px alt="Strawberry" class="img-fruit" />
                <h3><?php echo $menu['name']?></h3>
