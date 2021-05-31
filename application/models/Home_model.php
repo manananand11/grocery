@@ -6,12 +6,6 @@ class Home_model extends CI_model{
     $menus= $this->db->get('menus')->result_array();
     return $menus;
     }
-    function gettype()
-    {
-        $this->db->order_by('id', 'DESC');
-        $this->db->where('type', );
-    $menus= $this->db->get('menus')->result_array();
-    return $menus;
-    }
+   
 }
 ?>
