@@ -3,7 +3,7 @@
    div.container1 {
    position: relative;
    margin: 70px auto;
-   /* height: 470px; */
+   height: 470px;
    text-align: center;
    background: #fff;
    -moz-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1), 0px 60px 75px -25px rgba(0, 0, 0, 0.2);
@@ -189,9 +189,9 @@
             ?>
          <div class="col-12 col-md-3 col-sm-3" style="min-width:300px;">
             <div class="container1">
-               <!-- <img src="<?php echo base_url().'assets/image/'.$menu['image']?>" height=173px alt="Strawberry" class="img-fruit" /> -->
+               <img src="<?php echo base_url().'assets/image/'.$menu['image']?>" height=173px alt="Strawberry" class="img-fruit" />
                <h3><?php echo $menu['name']?></h3>
-               <!-- <div class="control-btn">
+               <div class="control-btn">
                   <?php if($menu['type']=="veg") : ?>
                   <span class="prev" style=" background: green; -moz-box-shadow: 0px 2px 7px green;
                      -webkit-box-shadow: 0px 2px 7px green;
@@ -204,29 +204,30 @@
                   </span>
                   <?php endif; ?>
 
-               </div> -->
-               <!-- <p>
-                  <?php echo $menu['regn']?>
-               </p> -->
+               </div>
+               <p>
+                  <?php echo $menu['desc']?>
+               </p>
                <div class="properties">
                   <div class="qty">
-                     <h4>Regn. number</h4>
-                     <span class="number"><?php echo $menu['regn']?></span>
+                     <h4>Shop</h4>
+                     <span class="number"><?php echo $menu['restaurant']?></span>
                   </div>
                   <div class="price">
-                     <h4>Contact</h4>
+                     <h4>Total Price</h4>
                      <span class="price-inr">
-                    
-                     <span class="amount"><?php echo $menu['contact']?></span>
+                     <i class="fa fa-inr"></i>
+                     <span class="amount"><?php echo $menu['price']?></span>
                      </span>
                   </div>
                   <div class="delivery">
-                     <h4>Delivery</h4>
-                     <i class="fa fa-fighter-jet"></i>
-                     <span class="time">In 15 mins</span>
+                     <h4>Weight</h4>
+                     <i class="fa fa-weight"></i>
+                     <span class="time"><?php echo(rand(100,500));
+?> gms</span>
                   </div>
                </div>
-               <a href="<?php echo base_url().'catalog/add/'.$menu['name']?>" class="ip-add-cart">Explore</a>
+               <a href="<?php echo base_url().'order/add/'.$menu['id']?>" class="ip-add-cart">Order</a>
             </div>
          </div>
          <?php }}?>

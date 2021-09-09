@@ -23,7 +23,7 @@
                            <th>Price</th>
                            <th>Type</th>
                            <th>Desc</th>
-                           <th>Restaurant Name</th>
+                           <th>Shop Name</th>
                            <th></th>
                         </thead>
                         <tbody>

@@ -13,7 +13,7 @@
                         <thead class="text-primary">
                            <th>Item Name</th>
                            <th>Price</th>
-                           <th>Restaurant</th>
+                           <th>Shop</th>
                            <th>Date</th>
                         </thead>
                         <tbody>
