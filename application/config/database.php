@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => 'us-cdbr-east-04.cleardb.com',
+	'username' => 'b1800128f7224f',
+	'password' => '65fb0ac4',
 	'database' => 'foodshala',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
