@@ -70,16 +70,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+$cleardb_url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server   = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db       = substr($cleardb_url["path"],1);
+
 $active_group = 'default';
 $query_builder = TRUE;
 
+
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'us-cdbr-east-04.cleardb.com',
-	'username' => 'b1800128f7224f',
-	'password' => '65fb0ac4',
-	'database' => 'foodshala',
-	'dbdriver' => 'mysqli',
+	'hostname' => $cleardb_server,
+     'username' => $cleardb_username,
+     'password' => $cleardb_password,
+     'database' => $cleardb_db,
+     'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
